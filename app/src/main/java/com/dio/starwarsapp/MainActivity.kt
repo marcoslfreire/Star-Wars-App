@@ -4,6 +4,7 @@ import android.os.AsyncTask
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Button
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
 
@@ -11,15 +12,24 @@ class MainActivity : AppCompatActivity() {
     private lateinit var recycle_view_list: RecyclerView
     private lateinit var progressbar_load_indicator : ConstraintLayout
 
+    //private lateinit var button_load_planetas: Button
+    private lateinit var button_list_personagens: Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+
+        button_list_personagens.setOnClickListener{
+            launchPeopleTask()
+        }
 
         recycle_view_list = findViewById(R.id.recycle_view_list)
         progressbar_load_indicator = findViewById(R.id.progressbar_load_indicator)
 
 
     }
+
 
     private fun showData(list: List<People>){
         recycle_view_list.adapter
@@ -37,6 +47,10 @@ class MainActivity : AppCompatActivity() {
 
     fun hideLoadigIndicator(){
         progressbar_load_indicator.visibility = View.GONE
+    }
+    fun launchPeopleTask(){
+        val task = TaskPeople()
+        task.execute()
     }
     private inner class TaskPeople(): AsyncTask<Void, Int, List<People>>(){
         val repository = PeopleRepository()
