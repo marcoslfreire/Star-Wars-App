@@ -1,5 +1,6 @@
 package com.dio.starwarsapp
 
+import android.os.AsyncTask
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -36,6 +37,27 @@ class MainActivity : AppCompatActivity() {
 
     fun hideLoadigIndicator(){
         progressbar_load_indicator.visibility = View.GONE
+    }
+    private inner class TaskPeople(): AsyncTask<Void, Int, List<People>>(){
+        val repository = PeopleRepository()
+
+        override fun onPreExecute() {
+            super.onPreExecute()
+            showLoadingIndicator()
+        }
+        override fun doInBackground(vararg params: Void?): List<People>? {
+            onProgressUpdate()
+            return repository.loadData()
+        }
+
+        override fun onPostExecute(result: List<People>?) {
+            super.onPostExecute(result)
+            hideLoadigIndicator()
+            if (result != null) {
+                showData(result)
+            }
+        }
+
     }
 
 }
