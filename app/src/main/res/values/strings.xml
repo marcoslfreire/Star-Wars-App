@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">StarWarsApp</string>
+    <string name="starWars">StarWars</string>
 </resources>
