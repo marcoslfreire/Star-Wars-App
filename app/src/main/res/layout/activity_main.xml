@@ -5,7 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/galaxy">
 
 
     <TextView
@@ -29,6 +30,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="32dp"
         android:text="Personagens"
+        android:shadowRadius="3dp"
         app:backgroundTint="@color/material_on_background_emphasis_medium"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

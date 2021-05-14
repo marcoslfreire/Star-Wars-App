@@ -3,7 +3,7 @@ package com.dio.starwarsapp
 import com.google.gson.annotations.SerializedName
 
 class PeopleResult (
-    //https://swapi.dev/api/people/
+    //
     //swapi.dev/api/planets/
     //swapi.dev/api/films/
     @SerializedName("count")
