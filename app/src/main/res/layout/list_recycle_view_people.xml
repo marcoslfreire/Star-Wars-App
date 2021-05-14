@@ -19,7 +19,7 @@
             android:orientation="vertical" >
 
             <TextView
-                android:id="@+id/nomeApk"
+                android:id="@+id/nome_people"
                 android:background="@color/black"
                 android:text="@string/People"
                 android:textColor="@color/white"
@@ -31,7 +31,7 @@
                 android:layout_height="wrap_content"/>
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rv_list"
+                android:id="@+id/recycle_view_list"
                 android:layout_marginTop="32dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
