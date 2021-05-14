@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">StarWarsApp</string>
     <string name="starWars">StarWars</string>
+    <string name="People">People</string>
+    <string name="iv_img_content_description">image</string>
 </resources>
