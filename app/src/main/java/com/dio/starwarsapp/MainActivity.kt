@@ -34,6 +34,10 @@ class MainActivity : AppCompatActivity() {
         progressbar_load_indicator.visibility = View.VISIBLE
     }
 
+    fun hideLoadigIndicator(){
+        progressbar_load_indicator.visibility = View.GONE
+    }
+
 }
 
 
