@@ -33,6 +33,7 @@ class MainActivity : AppCompatActivity() {
     }
 
 
+
     private fun populateList(list: List<People>) {
         peoplelist.apply{
             hasFixedSize()
