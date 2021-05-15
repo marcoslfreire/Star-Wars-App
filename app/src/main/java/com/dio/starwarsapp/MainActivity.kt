@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 class MainActivity : AppCompatActivity() {
     private lateinit var recycle_view_list: RecyclerView
     private lateinit var progressbar_load_indicator : ConstraintLayout
-    
+
     private lateinit var button_list_personagens: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
