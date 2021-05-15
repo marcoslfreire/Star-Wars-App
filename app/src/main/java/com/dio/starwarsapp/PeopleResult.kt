@@ -1,5 +1,6 @@
 package com.dio.starwarsapp
 
+import com.dio.starwarsapp.domain.People
 import com.google.gson.annotations.SerializedName
 
 class PeopleResult(
