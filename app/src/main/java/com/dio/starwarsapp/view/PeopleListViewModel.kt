@@ -1,11 +1,11 @@
-package com.dio.starwarsapp.viewmodel
+package com.dio.starwarsapp.view
 
 import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.dio.starwarsapp.domain.People
-import com.dio.starwarsapp.PeopleRepository
+import com.dio.starwarsapp.data.PeopleRepository
 import com.dio.starwarsapp.api.PeopleRestApiTask
 import com.dio.starwarsapp.implementations.PeopleDataSourceImplementation
 import com.dio.starwarsapp.usercase.PeopleListUseCase

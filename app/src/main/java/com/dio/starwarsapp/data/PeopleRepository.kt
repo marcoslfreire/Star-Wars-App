@@ -1,4 +1,4 @@
-package com.dio.starwarsapp
+package com.dio.starwarsapp.data
 
 import com.dio.starwarsapp.implementations.PeopleDataSourceImplementation
 

@@ -3,13 +3,10 @@ package com.dio.starwarsapp.view
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.RecyclerView
 import com.dio.starwarsapp.R
 import com.dio.starwarsapp.domain.People
-import com.dio.starwarsapp.viewmodel.PeopleListViewModel
 
 
 class MainActivity : AppCompatActivity() {
