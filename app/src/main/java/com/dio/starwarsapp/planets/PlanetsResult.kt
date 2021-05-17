@@ -1,4 +1,4 @@
-package com.dio.starwarsapp
+package com.dio.starwarsapp.planets
 
 import com.google.gson.annotations.SerializedName
 

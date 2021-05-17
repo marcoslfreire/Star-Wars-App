@@ -1,6 +1,5 @@
 package com.dio.starwarsapp.domain
-
-import com.dio.starwarsapp.PLanets
+import com.dio.starwarsapp.planets.PLanets
 import com.google.gson.annotations.SerializedName
 
 data class People (

@@ -5,7 +5,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 class PeopleRestApiTask {
     companion object{
-        const val BASE_URL = "api/people/"
+        const val BASE_URL = "https://swapi.dev/"
     }
 
     private fun peopleProvider(): Retrofit = Retrofit.Builder()
