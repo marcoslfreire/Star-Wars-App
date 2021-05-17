@@ -1,4 +1,8 @@
 package com.dio.starwarsapp.planets
 
-class PlanetsAdapter {
+class PlanetsAdapter( val planetsAdapterViewHolder = PlanetsAdapterViewHolder) {
+
+    class PlanetsAdapterViewHolder(){
+
+    }
 }

@@ -19,6 +19,7 @@ class PeopleAdapter(private val listener: List<People>): RecyclerView.Adapter<Pe
 
     override fun onBindViewHolder(holder: PeopleAdapterViewHolder, position: Int) {
         holder.getPeoplesList(list[position])
+
     }
 
     override fun getItemCount(): Int {
